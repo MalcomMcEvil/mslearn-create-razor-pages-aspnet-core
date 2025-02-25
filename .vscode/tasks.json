@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "version": "2.0.0",
     "tasks": [
@@ -38,4 +39,46 @@
             "problemMatcher": "$msCompile"
         }
     ]
+=======
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/ContosoPizza/ContosoPizza.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/ContosoPizza/ContosoPizza.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/ContosoPizza/ContosoPizza.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+>>>>>>> 0e29c3d60325e0b7ed09d7399c5be12de4f6b4e8
 }
